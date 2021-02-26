@@ -10,7 +10,7 @@ interface WeatherContract {
     }
 
     interface View{
-
+        fun showData(data: List<ForecastModel>)
     }
 
     interface Model{

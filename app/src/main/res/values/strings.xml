@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="weather_description">WEATHER DESCRIPTION</string>
+    <string name="time_data_forecast">TIME DATA FORECAST</string>
+    <string name="thermal_sensation">THERMAL SENSATION</string>
+    <string name="minimum_temperature">MINIMUM TEMPERATURE</string>
+    <string name="maximum_temperature">MAXIMUM TEMPERATURE</string>
+    <string name="temperature_unit">%1$s °C</string>
+    <string name="minimum_temperature_card">MIN: %1$s</string>
+    <string name="maximum_temperature_card">MAX: %1$s</string>
+    <string name="thermal_sensation_card">FEELS LIKE: %1$S</string>
 </resources>

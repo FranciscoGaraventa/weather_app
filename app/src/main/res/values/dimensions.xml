@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_image_view_xbig">100dp</dimen>
+    <dimen name="height_image_view_xbig">100dp</dimen>
+    <dimen name="margin_left_image_view_normal">20dp</dimen>
+    <dimen name="padding_top_text_view_xsmall">5dp</dimen>
+    <dimen name="border_radius_card_big">30dp</dimen>
+    <dimen name="card_elevation_xsmall">10dp</dimen>
+</resources>
