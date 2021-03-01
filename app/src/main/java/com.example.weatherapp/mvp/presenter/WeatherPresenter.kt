@@ -12,10 +12,18 @@ class WeatherPresenter(
     override fun getForecast() {
         model.getWeatherData(CITY).subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe { data -> view.showData(data)}
+            .subscribe { data ->
+                model.saveWeatherData(data)
+                view.showData(model.getFilteredForecast(HOUR))
+            }
+    }
+
+    override fun onForecastPressed(date: String) {
+        view.showForecastDayFragment(model.getFilteredForecast(date))
     }
 
     companion object {
         private const val CITY = "Tandil"
+        private const val HOUR = "00:00"
     }
 }

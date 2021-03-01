@@ -5,15 +5,19 @@ import io.reactivex.rxjava3.core.Observable
 
 interface WeatherContract {
 
-    interface Presenter{
+    interface Presenter {
         fun getForecast()
+        fun onForecastPressed(date: String)
     }
 
-    interface View{
+    interface View {
         fun showData(data: List<ForecastModel>)
+        fun showForecastDayFragment(forecastList: List<ForecastModel>)
     }
 
-    interface Model{
+    interface Model {
         fun getWeatherData(city: String): Observable<MutableList<ForecastModel>>
+        fun getFilteredForecast(date: String): List<ForecastModel>
+        fun saveWeatherData(forecastList: List<ForecastModel>)
     }
 }

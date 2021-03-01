@@ -10,6 +10,7 @@ import com.example.weatherapp.data.services.WeatherService
 import com.example.weatherapp.mvp.presenter.WeatherPresenter
 import com.example.weatherapp.data.services.builder.WeatherRequestBuilder
 import com.example.weatherapp.databinding.WeatherMainBinding
+import com.example.weatherapp.utils.getForecastDate
 
 class WeatherActivity : AppCompatActivity() {
 
@@ -25,6 +26,10 @@ class WeatherActivity : AppCompatActivity() {
             WeatherView(this, binding)
         )
         presenter.getForecast()
+    }
+
+    fun onCardPressed(date: String) {
+        presenter.onForecastPressed(date.getForecastDate())
     }
 
 }
