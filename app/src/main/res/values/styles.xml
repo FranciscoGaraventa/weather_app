@@ -6,4 +6,10 @@
         <item name="android:paddingTop">@dimen/padding_top_text_view_xsmall</item>
     </style>
 
+    <style name="CardTextViewStyleCustomMargin" parent="CardTextViewStyle">
+        <item name="android:paddingBottom">@dimen/padding_bottom_text_view_xsmall</item>
+        <item name="android:layout_marginRight">@dimen/margin_right_text_view_xsmall</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_text_view_xsmall</item>
+    </style>
+
 </resources>

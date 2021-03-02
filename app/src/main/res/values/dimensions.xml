@@ -4,6 +4,10 @@
     <dimen name="height_image_view_xbig">100dp</dimen>
     <dimen name="margin_left_image_view_normal">20dp</dimen>
     <dimen name="padding_top_text_view_xsmall">5dp</dimen>
+    <dimen name="padding_bottom_text_view_xsmall">5dp</dimen>
     <dimen name="border_radius_card_big">30dp</dimen>
     <dimen name="card_elevation_xsmall">10dp</dimen>
+    <dimen name="image_view_margin_start_xsmall">10dp</dimen>
+    <dimen name="margin_right_text_view_xsmall">20dp</dimen>
+    <dimen name="margin_left_text_view_xsmall">15dp</dimen>
 </resources>

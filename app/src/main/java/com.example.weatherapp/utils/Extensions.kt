@@ -7,6 +7,8 @@ import android.widget.ImageView
 import androidx.annotation.LayoutRes
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.bumptech.glide.request.ResourceCallback
+import com.example.weatherapp.utils.Constants.WHITE_SPACE
 
 fun ImageView.loadUrl(url: String, requestOption: RequestOptions) {
     Glide.with(context)
@@ -19,5 +21,8 @@ fun ViewGroup.inflate(@LayoutRes layoutRes: Int, attachToRoot: Boolean = true): 
     LayoutInflater.from(context)
         .inflate(layoutRes, this, attachToRoot)
 
+fun String.getForecastDate(): String{
+    return this.substringAfter(WHITE_SPACE).substringBefore(WHITE_SPACE)
+}
 
 
