@@ -13,6 +13,9 @@ interface WeatherContract {
     interface View {
         fun showData(data: List<ForecastModel>)
         fun showForecastDayFragment(forecastList: List<ForecastModel>)
+        fun showProgressBar()
+        fun hideProgressBar()
+        fun showConnectionMessageError()
     }
 
     interface Model {

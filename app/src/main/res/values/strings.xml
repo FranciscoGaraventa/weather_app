@@ -9,4 +9,5 @@
     <string name="minimum_temperature_card">MIN: %1$s</string>
     <string name="maximum_temperature_card">MAX: %1$s</string>
     <string name="thermal_sensation_card">FEELS LIKE: %1$S</string>
+    <string name="connection_message_error">IMPOSSIBLE TO LOAD FORECAST DATA</string>
 </resources>
