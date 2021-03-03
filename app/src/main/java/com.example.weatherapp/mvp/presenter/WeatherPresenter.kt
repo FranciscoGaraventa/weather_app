@@ -10,12 +10,18 @@ class WeatherPresenter(
 ) : WeatherContract.Presenter {
 
     override fun getForecast() {
-        model.getWeatherData(CITY).subscribeOn(Schedulers.io())
+        view.showProgressBar()
+        model.getWeatherData(CITY)
+            .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe { data ->
+            .subscribe({ data ->
                 model.saveWeatherData(data)
+                view.hideProgressBar()
                 view.showData(model.getFilteredForecast(HOUR))
-            }
+            }, {
+                view.hideProgressBar()
+                view.showConnectionMessageError()
+            })
     }
 
     override fun onForecastPressed(date: String) {
